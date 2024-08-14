@@ -18,7 +18,7 @@ public class PlayerMoveListener implements Listener {
     @EventHandler
     public void onPlayerMoveEvent(PlayerMoveEvent event) {
         Player player = event.getPlayer();
-        Material material = player.getLocation().getBlock().getType();
+        Material material = player.getEyeLocation().getBlock().getType();
         if (plugin.isPlayerInPortal(player)) {
             if (material != Material.NETHER_PORTAL && material != Material.END_PORTAL && material != Material.END_GATEWAY) {
                 plugin.removePlayerFromPortal(player);
