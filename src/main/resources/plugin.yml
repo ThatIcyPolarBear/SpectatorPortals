@@ -1,0 +1,4 @@
+name: SpectatorPortals
+version: '1.0'
+main: me.carp.spectatorPortals.SpectatorPortals
+api-version: '1.21'
