@@ -1,7 +1,6 @@
 package me.carp.spectatorPortals.listeners;
 
 import me.carp.spectatorPortals.SpectatorPortals;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

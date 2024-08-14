@@ -14,7 +14,7 @@ import java.util.UUID;
 
 public final class SpectatorPortals extends JavaPlugin {
     
-    Set<UUID> playersInPortal = new HashSet<UUID>();
+    Set<UUID> playersInPortal = new HashSet<>();
 
     @Override
     public void onEnable() {
