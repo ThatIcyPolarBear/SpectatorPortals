@@ -24,11 +24,10 @@ public class PlayerMoveListener implements Listener {
                 plugin.removePlayerFromPortal(player);
             }
         } else {
-            if (material == Material.NETHER_PORTAL || material == Material.END_PORTAL || material == Material.END_GATEWAY) {
-                if (player.getGameMode() != org.bukkit.GameMode.SPECTATOR) {
-                    return;
+            if (player.getGameMode() == org.bukkit.GameMode.SPECTATOR) {
+                if (material == Material.NETHER_PORTAL || material == Material.END_PORTAL || material == Material.END_GATEWAY) {
+                    plugin.addPlayerToPortal(player);
                 }
-                plugin.addPlayerToPortal(player);
             }
         }
     }
